@@ -1,25 +1,23 @@
 /* fondo */
+
 body{
     background-image: url(./../imgzapateria/fondo-claro.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Red Hat Display', sans-serif;
     overflow-x: hidden;
-    margin: 0%;
 }
+
 .nav-propia{
     background-color: rgb(233, 130, 181);
 }
-
-ul li i{
-    color: rgb(179, 71, 143);
-    display: grid;
-    grid-template-columns: 1fr;
-    text-decoration: none;
+h5{
+    color: white
 }
 .titulos{
     color: rgb(245, 98, 179);
     text-align: center;
+    margin-top: 100px;
 }
 .subtitulos{
     color: rgb(241, 85, 171);
@@ -31,8 +29,118 @@ ul li i{
     color: white;
     text-align: center;
 }
-p{
+
+.contenedor-zapato{
+    display: grid;
+    align-items: flex-end;
+    gap: 2rem;
+    margin: 5%;
+}
+@media (min-width:768px) {
+    .contenedor-zapato{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+.zapato {
+    display: flex;
+    flex-direction: column;
+}
+.zapato img{
+    max-width: 100%;
+    margin-bottom: 2rem;
+    transition: scale, 0.3s;
+}
+.zapato img:hover{
+    transition: scale, 0.3s;
+}
+.zapato p {
     text-align: center;
-    color: rgb(241, 100, 194);
-    size: 150%;
+    color:rgb(233, 130, 181);
+    font-size: 2rem;
+}
+.ago-cris{
+    width: 45%;
+    padding: 5%;
+}
+.formulario{
+    padding-bottom: 7rem;
+}
+.footer{
+    border-top: 1px solid rgb(209, 208, 208);
+    background-color: rgb(233, 130, 181);
+    text-decoration: none;
+}
+.menu-footer{
+    display: grid;
+    align-items: center;
+    gap: 1rem;
+}
+@media (min-width:768px) {
+    .menu-footer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.enlaces {
+    display: flex;
+    flex-direction: column;
+    grid-row: 2/3;
+}
+@media (min-width:768px) {
+    .enlaces{
+        grid-row: unset;
+    }
+}
+
+.div-footer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+@media (min-width:768px) {
+   .div-footer{
+    justify-content: center;
+
+   } 
+}
+
+.div-footer p {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+@media (min-width:768px) {
+    .div-footer p{
+        font-size: 1.5rem;
+    }
+}
+
+.div-footer a {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.footer-imagen iframe{
+    width: 100%;
+}
+.copyright{
+    text-align: center;
+    padding: 0 0 1rem;
+    color: white;
+}
+@media (min-width:768px) {
+    .copyright {
+        margin-top: 1rem;
+        padding: 2rem;
+    }
+}
+
+.copyright p {
+    font-size: 1rem;
+}
+@media (min-width:768px) {
+    .copyright p {
+        font-size: 1.2rem;
+
+    }
 }
