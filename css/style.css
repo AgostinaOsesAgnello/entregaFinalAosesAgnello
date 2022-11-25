@@ -1,0 +1,38 @@
+/* fondo */
+body{
+    background-image: url(./../imgzapateria/fondo-claro.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Red Hat Display', sans-serif;
+    overflow-x: hidden;
+    margin: 0%;
+}
+.nav-propia{
+    background-color: rgb(233, 130, 181);
+}
+
+ul li i{
+    color: rgb(179, 71, 143);
+    display: grid;
+    grid-template-columns: 1fr;
+    text-decoration: none;
+}
+.titulos{
+    color: rgb(245, 98, 179);
+    text-align: center;
+}
+.subtitulos{
+    color: rgb(241, 85, 171);
+    text-align: center;
+}
+.card{
+    margin: 12px;
+    background-color: palevioletred;
+    color: white;
+    text-align: center;
+}
+p{
+    text-align: center;
+    color: rgb(241, 100, 194);
+    size: 150%;
+}
