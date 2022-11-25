@@ -1,7 +1,7 @@
 /* fondo */
 
 body{
-    background-image: url(./../imgzapateria/fondo-claro.jpeg);
+    background-image: url(../imgzapateria/fondo-claro.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Red Hat Display', sans-serif;
@@ -54,7 +54,7 @@ h5{
 .zapato img:hover{
     transition: scale, 0.3s;
 }
-.zapato p {
+.zapato p,h3, .texto{
     text-align: center;
     color:rgb(233, 130, 181);
     font-size: 2rem;
